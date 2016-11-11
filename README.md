@@ -35,7 +35,22 @@ A react boilerplate project for Visual Studio Code based on [react-transform-boi
 3.   make sure you have [vscode-chrome-debug](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) and [vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension installed
 4.   press <kbd>F1</kbd> > `Run Task` > `install` (or `npm install`) to install all dependencies
 
-
+## Chrome instances
+By default, the starter kit launches a new instance of Chrome, with none of the default user's plugins, settings, etc.  If you'd prefer to launch the debugger in an instance of Chrome under your default profile, add the path to your Chrome executable to the 'Debug with default Chrome profile' object in `.vscode/launch.json`:
+```
+// As it might in a Ubuntu environment
+ {
+   "name": "Debug",
+   "type": "chrome",
+   "request": "launch",
+   "webRoot": "${workspaceRoot}",
+   "url": "http://localhost:3000/index.html", 
+    "runtimeExecutable": "/usr/bin/google-chrome-stable",
+   "sourceMaps": true,
+   "preLaunchTask": "development",
+   "smartStep": true
+}
+```
 ## Visual Studio Code shortcuts
 
 *   <kbd>F5</kbd> to start debugging
