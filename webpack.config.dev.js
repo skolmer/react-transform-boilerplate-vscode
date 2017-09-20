@@ -6,8 +6,7 @@ module.exports = {
     devtool: 'cheap-module-source-map',
     entry: [
         'react-hot-loader/patch',
-        `webpack-dev-server/client?http://${process.env.npm_package_config_host}:${process.env.npm_package_config_port}`,
-        'webpack/hot/only-dev-server',
+        'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
         './src/index.dev'
     ],
     output: {

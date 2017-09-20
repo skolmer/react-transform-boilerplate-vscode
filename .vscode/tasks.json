@@ -27,7 +27,7 @@
 					"pattern": {
 					  "regexp": "____________"
 					},
-					"watching": {
+					"background": {
 						"activeOnStart": true,
 						"beginsPattern": "^webpack: Compiling\\.\\.\\.$",
 						"endsPattern": "^webpack: (Compiled successfully|Failed to compile)\\.$"

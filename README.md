@@ -5,8 +5,10 @@ A react boilerplate project for Visual Studio Code based on [react-transform-boi
 ![](overview.gif)
 
 ## Features
+
 * Intellisense (code completion) for external libraries via [Automatic Type Acquisition (ATA)](https://code.visualstudio.com/updates/v1_7) 
 * Debugging react ES2015 classes inside vscode via [vscode-chrome-debug](https://github.com/Microsoft/vscode-chrome-debug) extension
+* Debugging both the server and client at the same time
 * Easy access to install, build and debugging commands via vscode command palette and keyboard shortcuts
 * JSX code analysis (linting) with autofixing support via [vscode-eslint](https://github.com/Microsoft/vscode-eslint) extension
 * [React Hot Loading](https://www.youtube.com/watch?v=xsSnOQynTHs)
@@ -35,6 +37,12 @@ A react boilerplate project for Visual Studio Code based on [react-transform-boi
 3.   make sure you have [vscode-chrome-debug](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) and [vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension installed
 4.   press <kbd>F1</kbd> > `Run Task` > `install` (or `npm install`) to install all dependencies
 
+## Running
+
+1.   type `npm start` in the integrated terminal to build the client and run the server
+2.   in vscode, add a breakpoint in `devServer.js` in the `app.on('test')` callback
+3.   in vscode, add a breakpoint in `Counter.js` in the `render` function
+4.   choose the `Server/Client Debug` debug configuration and click "Start Debugging" (F5) to attach the client and server debuggers
 
 ## Visual Studio Code shortcuts
 
