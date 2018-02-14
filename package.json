@@ -6,7 +6,7 @@
     "clean": "rimraf dist",
     "build:webpack": "cross-env NODE_ENV=production webpack --colors --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
-    "start": "node devServer.js",
+    "start": "node --inspect devServer.js",
     "lint": "eslint src/**",
     "precommit": "npm run lint"
   },
@@ -53,9 +53,11 @@
     "react-hot-loader": "^3.0.0-beta.7",
     "rimraf": "^2.6.1",
     "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.19.1"
   },
   "dependencies": {
+    "express": "^4.15.4",
     "lodash": "^4.17.4",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",

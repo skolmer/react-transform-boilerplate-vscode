@@ -1,23 +1,35 @@
 {
-	"version": "0.2.0",
-	"configurations": [
-	    {
-                "name": "Debug",
-                "type": "chrome",
-                "request": "launch",
-                "webRoot": "${workspaceRoot}",
-                "url": "http://localhost:3000", 
-                "userDataDir": "${workspaceRoot}/.vscode/chrome",
-                "sourceMaps": true,
-                "preLaunchTask": "development",
-                "smartStep": true,
-                "internalConsoleOptions": "openOnSessionStart",
-                "skipFiles": [
-                    "node_modules/**"
-                ],
-                "sourceMapPathOverrides": {
-                    "webpack:///*": "${webRoot}/*"
-                }
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "name": "Server",
+            "type":  "node",
+            "request": "attach",
+            "protocol": "inspector",
+            "port": 9229
+        },
+        {
+            "name": "Client",
+            "type": "chrome",
+            "request": "launch",
+            "webRoot": "${workspaceRoot}",
+            "url": "http://localhost:3000", 
+            "userDataDir": "${workspaceRoot}/.vscode/chrome",
+            "sourceMaps": true,
+            "smartStep": true,
+            "internalConsoleOptions": "openOnSessionStart",
+            "skipFiles": [
+                "node_modules/**"
+            ],
+            "sourceMapPathOverrides": {
+                "webpack:///*": "${webRoot}/*"
             }
-	]
+        }
+    ],
+    "compounds": [
+	{ 
+	    "name": "Server/Client Debug",
+	    "configurations": ["Server", "Client"]
+	}
+     ]    
 }
