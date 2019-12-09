@@ -1,22 +1,22 @@
 {
-    "presets": [
-        "es2015",
-        "stage-0",
-        "react"
-    ],
+  "presets": [
+    "es2015",
+    "stage-0",
+    "react"
+  ],
     "plugins": [
-        "react-hot-loader/babel"
+      "react-hot-loader/babel"
     ],
-    "env": {
-        "production": {
-            "presets": [
-                "react-optimize"
-            ]
-        },
-        "development": {
-            "plugins": [
-                "transform-react-jsx-source"
-            ]
-        }
+      "env": {
+    "production": {
+      "presets": [
+        "react-optimize"
+      ]
+    },
+    "development": {
+      "plugins": [
+        "transform-react-jsx-source"
+      ]
     }
+  }
 }

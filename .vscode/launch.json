@@ -1,23 +1,35 @@
 {
-	"version": "0.2.0",
-	"configurations": [
-	    {
-                "name": "Debug",
-                "type": "chrome",
-                "request": "launch",
-                "webRoot": "${workspaceRoot}",
-                "url": "http://localhost:3000", 
-                "userDataDir": "${workspaceRoot}/.vscode/chrome",
-                "sourceMaps": true,
-                "preLaunchTask": "development",
-                "smartStep": true,
-                "internalConsoleOptions": "openOnSessionStart",
-                "skipFiles": [
-                    "node_modules/**"
-                ],
-                "sourceMapPathOverrides": {
-                    "webpack:///*": "${webRoot}/*"
-                }
-            }
-	]
+  "version": "0.2.0",
+  "configurations": [{
+    "name": "Debug",
+    "type": "chrome",
+    "request": "launch",
+    "webRoot": "${workspaceRoot}",
+    "url": "http://localhost:3000",
+    "userDataDir": "${workspaceRoot}/.vscode/chrome",
+    "sourceMaps": true,
+    "preLaunchTask": "development",
+    "smartStep": true,
+    "internalConsoleOptions": "openOnSessionStart",
+    "skipFiles": [
+      "node_modules/**"
+    ],
+    "sourceMapPathOverrides": {
+      "webpack:///*": "${webRoot}/*"
+    }
+  }, {
+    "type": "chrome",
+    "request": "attach",
+    "name": "Attach Chrome",
+    "url": "http://localhost:3000",
+    "webRoot": "${workspaceRoot}",
+    "sourceMaps": true,
+    "preLaunchTask": "development",
+    "smartStep": true,
+    "port": 9222,
+    "internalConsoleOptions": "openOnFirstSessionStart",
+    "sourceMapPathOverrides": {
+      "webpack:///*": "${webRoot}/*"
+    },
+  }]
 }

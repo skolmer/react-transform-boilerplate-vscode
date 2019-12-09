@@ -2,10 +2,11 @@
 
 A react boilerplate project for Visual Studio Code based on [react-transform-boilerplate](https://github.com/gaearon/react-transform-boilerplate) and [React Hot Loader 3.0](https://github.com/gaearon/react-hot-boilerplate/pull/61)
 ***
-![](overview.gif)
+![overview](overview.gif)
 
 ## Features
-* Intellisense (code completion) for external libraries via [Automatic Type Acquisition (ATA)](https://code.visualstudio.com/updates/v1_7) 
+
+* Intellisense (code completion) for external libraries via [Automatic Type Acquisition (ATA)](https://code.visualstudio.com/updates/v1_7)
 * Debugging react ES2015 classes inside vscode via [vscode-chrome-debug](https://github.com/Microsoft/vscode-chrome-debug) extension
 * Easy access to install, build and debugging commands via vscode command palette and keyboard shortcuts
 * JSX code analysis (linting) with autofixing support via [vscode-eslint](https://github.com/Microsoft/vscode-eslint) extension
@@ -34,18 +35,22 @@ A react boilerplate project for Visual Studio Code based on [react-transform-boi
 
 ## Installation
 
-1.   `git clone https://github.com/skolmer/react-hot-boilerplate-vscode.git`
-2.   open react-hot-boilerplate-vscode in Visual Studio Code
-3.   make sure you have [vscode-chrome-debug](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) and [vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension installed
-4.   press <kbd>F1</kbd> > `Run Task` > `install` (or `npm install`) to install all dependencies
-
+1. `git clone https://github.com/skolmer/react-hot-boilerplate-vscode.git`
+2. open react-hot-boilerplate-vscode in Visual Studio Code
+3. make sure you have [vscode-chrome-debug](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) and [vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension installed
+4. press <kbd>F1</kbd> > `Run Task` > `install` (or `npm install`) to install all dependencies
+5. run `/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --incognito` in terminal
+6. press <kbd>F5</kbd> to start debugging
 
 ## Visual Studio Code shortcuts
 
-*   <kbd>F5</kbd> to start debugging
-*   <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>B</kbd> to build a production release
-*   <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>T</kbd> to run eslint
+* <kbd>F5</kbd> to start debugging
+* <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>B</kbd> to build a production release
+* <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>T</kbd> to run eslint
 
+## Troubleshooting
+
+* [How to make Chrome always launch with remote-debugging-port flag](https://stackoverflow.com/questions/51563287/how-to-make-chrome-always-launch-with-remote-debugging-port-flag)
 
 ## License
 

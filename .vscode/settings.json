@@ -1,49 +1,47 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-	"editor.formatOnType": true,
-	"eslint.enable": true,
-	"files.associations": {
-		"**/src/**/*.js": "javascriptreact",
-		"**/node_modules/**/*.js": "javascript",
-		".babelrc": "json",
-		".eslintignore": "gitignore"
-	},
-	"files.exclude": {
-		".vscode/chrome/**": true
-	},
-	"files.watcherExclude": {
-		".vscode/chrome/**": true
-	},
-	"html.format.extraLiners": "!",
-	"html.format.indentInnerHtml": true,
-	"json.schemas": [
-		{
-			"fileMatch": [
-				"/package.json"
-			],
-			"schema": {
-				"type": "object",
-				"properties": {
-					"config": {
-						"properties": {
-							"port": {
-								"type": "number",
-								"description": "The port of the webpack-dev-server",
-								"default": 3000
-							},
-							"host": {
-								"type": "string",
-								"description": "The hostname or ip of the webpack-dev-server",
-								"default": "localhost"
-							}
-						}
-					}
-				}
-			}
-		}
-	],
-	"search.exclude": {
-		"dist/**": true
-	},
-	"typescript.check.tscVersion": false
+  "editor.formatOnType": true,
+  "eslint.enable": true,
+  "files.associations": {
+    "**/src/**/*.js": "javascriptreact",
+    "**/node_modules/**/*.js": "javascript",
+    ".babelrc": "json",
+    ".eslintignore": "gitignore"
+  },
+  "files.exclude": {
+    ".vscode/chrome/**": true
+  },
+  "files.watcherExclude": {
+    ".vscode/chrome/**": true
+  },
+  "html.format.extraLiners": "!",
+  "html.format.indentInnerHtml": true,
+  "json.schemas": [{
+    "fileMatch": [
+      "/package.json"
+    ],
+    "schema": {
+      "type": "object",
+      "properties": {
+        "config": {
+          "properties": {
+            "port": {
+              "type": "number",
+              "description": "The port of the webpack-dev-server",
+              "default": 3000
+            },
+            "host": {
+              "type": "string",
+              "description": "The hostname or ip of the webpack-dev-server",
+              "default": "localhost"
+            }
+          }
+        }
+      }
+    }
+  }],
+  "search.exclude": {
+    "dist/**": true
+  },
+  "typescript.check.tscVersion": false
 }

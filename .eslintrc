@@ -1,77 +1,77 @@
 {
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "sourceType": "module",
-        "ecmaVersion": 6
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "env": {
-        "es6": true,
-        "browser": true,
-        "node": true
-    },
-    "ignore": [
-        "node_modules"
+    "sourceType": "module",
+    "ecmaVersion": 6
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "ignore": [
+    "node_modules"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:lodash/recommended",
+    "plugin:react/recommended"
+  ],
+  "globals": {
+    "__DEV__": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "quotes": [
+      2,
+      "single"
     ],
-    "extends": [
-        "eslint:recommended",
-        "plugin:import/errors",
-        "plugin:import/warnings",
-        "plugin:lodash/recommended",
-        "plugin:react/recommended"
+    "strict": [
+      2,
+      "never"
     ],
-    "globals": {
-        "__DEV__": true
-    },
-    "parser": "babel-eslint",
-    "rules": {
-        "quotes": [
-            2,
-            "single"
-        ],
-        "strict": [
-            2,
-            "never"
-        ],
-        "no-var": 2,
-        "prefer-spread": 2,
-        "prefer-const": 2,
-        "prefer-template": 2,
-        "generator-star-spacing": 1,
-        "babel/new-cap": 1,
-        "object-shorthand": 1,
-        "arrow-parens": 1,
-        "no-await-in-loop": 1,
-        "react/no-multi-comp": [
-            2,
-            {
-                "ignoreStateless": true
-            }
-        ],
-        "lodash/prefer-lodash-method": [
-            2,
-            {
-                "ignoreObjects": [
-                    "React.Children"
-                ]
-            }
+    "no-var": 2,
+    "prefer-spread": 2,
+    "prefer-const": 2,
+    "prefer-template": 2,
+    "generator-star-spacing": 1,
+    "babel/new-cap": 1,
+    "object-shorthand": 1,
+    "arrow-parens": 1,
+    "no-await-in-loop": 1,
+    "react/no-multi-comp": [
+      2,
+      {
+        "ignoreStateless": true
+      }
+    ],
+    "lodash/prefer-lodash-method": [
+      2,
+      {
+        "ignoreObjects": [
+          "React.Children"
         ]
+      }
+    ]
+  },
+  "plugins": [
+    "babel",
+    "import",
+    "lodash",
+    "react"
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.dev.js"
+      }
     },
-    "plugins": [
-        "babel",
-        "import",
-        "lodash",
-        "react"
-    ],
-    "settings": {
-        "import/resolver": {
-            "webpack": {
-                "config": "webpack.config.dev.js"
-            }
-        },
-        "import/ignore": [
-            "node_modules"
-        ]
-    }
+    "import/ignore": [
+      "node_modules"
+    ]
+  }
 }

@@ -4,6 +4,6 @@ import App from './App';
 
 const rootEl = document.getElementById('root');
 render(
-    <App />,
-    rootEl
+  <App />,
+  rootEl
 );
